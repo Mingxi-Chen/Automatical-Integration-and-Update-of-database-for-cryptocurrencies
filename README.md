@@ -7,3 +7,5 @@ This Python project aims to:
 2. Integrates Top200 cryptocurrencies into a database.
 3. Automatically updates to the master database on a week basis at a local machine(Pycharm) or a cloud platform(Google Colab).
 
+Prerequisites:
+CoinMarketCap account; Selenium
