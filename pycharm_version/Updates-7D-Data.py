@@ -14,7 +14,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 
 # import crypto names
 listName = []
-with open("csvfile.csv", newline='') as file:
+with open("FILE_NAME.csv", newline='') as file:
     csv_reader = csv.reader(file, delimiter=',')
     listName = csv_reader.__next__()
 
