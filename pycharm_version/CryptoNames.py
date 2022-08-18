@@ -10,7 +10,7 @@ parameter = {'limit': '200', 'sort': 'cmc_rank'}
 
 headers = {
     'Accepts': 'application/json',
-    'X-CMC_PRO_API_KEY': 'YOUR COINMARKET CAP API KEY'
+    'X-CMC_PRO_API_KEY': 'YOUR OWN COINMARKET CAP API KEY'
 
 }
 session = Session()
@@ -22,6 +22,6 @@ top200 = []
 for index in range(200):
     top200.append(info['data'][index]['symbol'])
 
-with open('csvfile.csv', 'w') as file:
+with open('FILE_NAME.csv', 'w') as file:
     write = csv.writer(file)
     write.writerow(top200)
